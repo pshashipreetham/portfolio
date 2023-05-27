@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashi Preetham's Portfolio</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://st2.depositphotos.com/38197074/44590/v/450/depositphotos_445908910-stock-illustration-initial-letter-vector-logo-icon.jpg">
+    <link rel="stylesheet" href="home.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Portfolio<span>.</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="Projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Shashi Preetham</h1>
+            <h3>And I'm a <span>Thingworx Developer</span></h3>
+            <p>Experienced IIoT Developer Specializing in Thingworx, Windchill, DevOps, and Tulip</p>
+            <div class="social-media">
+                <a href="https://github.com/psp316r" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/pshashipreetham/" target="_blank"><i
+                        class='bx bxl-linkedin-square'></i></a>
+            </div>
+            <a href="test.txt" download class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="image.jpg" alt="">
+        </div>
+    </section>
+    <script>
+        let menuIcon = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+        menuIcon.onclick = () => {
+            menuIcon.classList.toggle('bx-x')
+            navbar.classList.toggle('Active')
+        }
+    </script>
+</body>
+
+</html>

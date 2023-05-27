@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashi Preetham's Portfolio</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://st2.depositphotos.com/38197074/44590/v/450/depositphotos_445908910-stock-illustration-initial-letter-vector-logo-icon.jpg">
+    <link rel="stylesheet" href="home.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Portfolio<span>.</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="Projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="Add your email link here" method="POST">
+            <div class="input-box">
+                <input type="text" placeholder="Full name" required id="name" name="Name">
+                <input type="email" placeholder="Email Address" required id="email" name="Email">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number" required id="phone" name="Mobile">
+                <input type="text" placeholder="Email Subject" required id="subject" name="subject">
+            </div>
+            <textarea id="message" cols="30" rows="10" placeholder="Your Message" name="Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+    <script>
+        let menuIcon = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+        menuIcon.onclick = () => {
+            menuIcon.classList.toggle('bx-x')
+            navbar.classList.toggle('Active')
+        }
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+
+</html>

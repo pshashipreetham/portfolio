@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashi Preetham's Portfolio</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://st2.depositphotos.com/38197074/44590/v/450/depositphotos_445908910-stock-illustration-initial-letter-vector-logo-icon.jpg">
+    <link rel="stylesheet" href="home.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Portfolio<span>.</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="Projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Thingworx Developer</h3>
+            <p>As an experienced IoT Developer, I specialize in Thingworx, DevOps, and Tulip. I have a strong
+                software development and project management background, with extensive industrial automation experience.
+            </p>
+
+            <p> My skills include Java, Python, JavaScript, HTML5, SQL, Docker, Kubernetes, Azure, and AWS.</p>
+
+            <p>
+
+                I have developed end-to-end applications on the Tulip and Thingsboard platform and integrated Thingworx
+                with Windchill APIs using an OData connector. My project experience includes developing Manufacturing
+                Apps, Smart Asset Integrity Management, Digital Performance Management, and Energy Performance Indicator
+                apps. I am a driven and dedicated professional with a passion for software development and industrial
+                automation.</p>
+            <!-- <a href="" class="btn">Read More</a> -->
+        </div>
+    </section>
+    <script>
+        let menuIcon = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+        menuIcon.onclick = () => {
+            menuIcon.classList.toggle('bx-x')
+            navbar.classList.toggle('Active')
+        }
+    </script>
+</body>
+
+</html>

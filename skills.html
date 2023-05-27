@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashi Preetham's Portfolio</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://st2.depositphotos.com/38197074/44590/v/450/depositphotos_445908910-stock-illustration-initial-letter-vector-logo-icon.jpg">
+    <link rel="stylesheet" href="home.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Portfolio<span>.</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="Projects.html">Projects</a>
+            <a href="skills.html" class="active">Skills</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-container">
+            <div class="skills-box">
+                <i class="bx bx-code-alt"></i>
+                <h3>Thingworx Development</h3>
+                <p>As a Thingworx Specialist I work with clients to develop industrial IoT solutions using the Thingworx
+                    platform. I design and implement custom solutions, configure dashboards, workflows, and integrations
+                    with sensors/devices, and provide ongoing support. I am expertised in IoT technologies, programming
+                    languages like Java and JavaScript, and knowledge of industrial automation and control systems.</p>
+            </div>
+            <div class="skills-box">
+                <i class="bx bxs-paint"></i>
+                <h3>Tulip Development</h3>
+                <p>Tulip.co is a no-code platform for building digital manufacturing apps. It offers drag-and-drop tools
+                    to create workflows, data collection, and analysis for improving operations in manufacturing
+                    environments</p>
+            </div>
+            <div class="skills-box">
+                <i class="bx bx-code-alt"></i>
+                <h3>Windchill Development</h3>
+                <p>Windchill is a PLM (Product Lifecycle Management) software developed by PTC. Windchill developers
+                    customize the software to meet the specific needs of companies for managing product data, workflows,
+                    and collaboration across the product development cycle.</p>
+            </div>
+            <div class="skills-box">
+                <i class="bx bx-bar-chart-alt"></i>
+                <h3>Digital Manufacturing Solutions </h3>
+                <p>As a Digital Manufacturing Solutions Developer, I create software solutions to optimize manufacturing
+                    processes and with clients to design and implement customized solutions that integrate IoT data and
+                    have expertise in software development, industrial automation, and manufacturing processes.</p>
+            </div>
+            <div class="skills-box">
+                <i class="bx bx-bar-chart-alt"></i>
+                <h3>MES Development</h3>
+                <p>Manufacturing engineering services involve designing, developing, and optimizing manufacturing
+                    processes to improve efficiency, quality, and productivity. This includes everything from product
+                    design to production line layout and equipment selection.</p>
+            </div>
+            <div class="skills-box">
+                <i class="bx bxs-paint"></i>
+                <h3>Azure Cognitive Services Specialist </h3>
+                <p>I work with clients to identify AI requirements, implement customized solutions using Azure Cognitive
+                    Services, and integrate them with existing systems. I troubleshoot issues, optimize performance, and
+                    provide ongoing support, requiring strong knowledge of AI, machine learning, programming languages,
+                    and Azure cloud platform.</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        let menuIcon = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+        menuIcon.onclick = () => {
+            menuIcon.classList.toggle('bx-x')
+            navbar.classList.toggle('Active')
+        }
+    </script>
+</body>
+
+</html>
